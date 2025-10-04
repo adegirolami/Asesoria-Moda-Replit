@@ -29,24 +29,24 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-16 md:py-24 bg-muted">
+    <section className="py-12 md:py-24 bg-muted">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-4 text-foreground">
+        <h2 className="font-serif text-2xl md:text-4xl font-semibold text-center mb-3 text-foreground">
           Ellas ya están generando ingresos
         </h2>
-        <p className="text-center text-lg text-muted-foreground mb-12">
+        <p className="text-center text-sm md:text-lg text-muted-foreground mb-8 md:mb-12">
           ⭐⭐⭐⭐⭐ 4.9/5 basado en 847 reseñas verificadas
         </p>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 
-              className="p-8 space-y-4"
+              className="p-6 md:p-8 space-y-4"
               data-testid={`card-testimonial-${index}`}
             >
-              <div className="flex items-center justify-between">
-                <Quote className="w-8 h-8 text-primary/30" />
-                <div className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
+              <div className="flex items-center justify-between gap-2">
+                <Quote className="w-6 h-6 md:w-8 md:h-8 text-primary/30 flex-shrink-0" />
+                <div className="bg-primary/10 text-primary px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-semibold">
                   {testimonial.result}
                 </div>
               </div>
