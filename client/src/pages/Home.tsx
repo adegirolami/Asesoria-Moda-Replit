@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import SocialProofBanner from "@/components/SocialProofBanner";
 import ValidationSection from "@/components/ValidationSection";
 import OpportunitySection from "@/components/OpportunitySection";
 import TransformationSection from "@/components/TransformationSection";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <SocialProofBanner />
       <ValidationSection />
       <OpportunitySection />
       <TransformationSection />
