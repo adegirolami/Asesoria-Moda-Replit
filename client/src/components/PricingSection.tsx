@@ -23,8 +23,7 @@ export default function PricingSection() {
   const seconds = timeLeft % 60;
 
   const handlePurchase = () => {
-    console.log('Purchase button clicked');
-    // TODO: Integrate with Hotmart payment gateway
+    window.open('https://pay.hotmart.com/C102237917S', '_blank');
   };
 
   return (

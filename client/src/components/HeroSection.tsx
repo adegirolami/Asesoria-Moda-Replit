@@ -3,8 +3,7 @@ import ebookImage from "@assets/generated_images/3D_ebook_mockup_with_fashion_el
 
 export default function HeroSection() {
   const handleCTA = () => {
-    console.log('CTA clicked - scroll to purchase');
-    document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' });
+    window.open('https://pay.hotmart.com/C102237917S', '_blank');
   };
 
   return (
