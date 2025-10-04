@@ -1,8 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Clock } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function PricingSection() {
+  const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutos en segundos
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        if (prevTime <= 0) {
+          return 45 * 60; // Reinicia a 45 minutos cuando llega a 0
+        }
+        return prevTime - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+
   const handlePurchase = () => {
     console.log('Purchase button clicked');
     // TODO: Integrate with Hotmart payment gateway
@@ -32,7 +51,9 @@ export default function PricingSection() {
               <Clock className="w-5 h-5" />
               <p className="text-sm md:text-base font-semibold">Esta oferta expira en:</p>
             </div>
-            <p className="text-2xl font-bold text-destructive">23 horas 47 minutos</p>
+            <p className="text-2xl md:text-3xl font-bold text-destructive font-mono">
+              {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
+            </p>
             <p className="text-xs text-muted-foreground mt-2">Después el precio vuelve a USD 89</p>
           </div>
           <Button 
