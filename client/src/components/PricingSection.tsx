@@ -27,37 +27,37 @@ export default function PricingSection() {
   };
 
   return (
-    <section id="pricing-section" className="py-16 md:py-24 bg-gradient-to-br from-[hsl(340,65%,92%)] via-[hsl(300,45%,88%)] to-[hsl(25,35%,90%)]">
+    <section id="pricing-section" className="py-12 md:py-24 bg-gradient-to-br from-[hsl(340,65%,92%)] via-[hsl(300,45%,88%)] to-[hsl(25,35%,90%)]">
       <div className="max-w-2xl mx-auto px-4">
-        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-4 text-foreground">
+        <h2 className="font-serif text-2xl md:text-4xl font-semibold text-center mb-3 md:mb-4 text-foreground">
           Acceso inmediato - Precio promocional
         </h2>
-        <p className="text-center text-muted-foreground mb-8">
+        <p className="text-center text-sm md:text-base text-muted-foreground mb-6 md:mb-8">
           Solo 47 copias disponibles a este precio especial
         </p>
-        <Card className="p-8 md:p-12 text-center space-y-6">
+        <Card className="p-6 md:p-12 text-center space-y-5 md:space-y-6">
           <div>
-            <p className="text-lg text-muted-foreground mb-2">Valor del programa completo:</p>
-            <p className="text-2xl md:text-3xl line-through opacity-60 text-foreground">USD 89</p>
+            <p className="text-base md:text-lg text-muted-foreground mb-2">Valor del programa completo:</p>
+            <p className="text-xl md:text-3xl line-through opacity-60 text-foreground">USD 89</p>
           </div>
           <div>
-            <p className="text-xl md:text-2xl text-primary mb-2">🔥 Precio de lanzamiento - HOY</p>
-            <p className="text-5xl md:text-6xl font-bold text-primary" data-testid="text-price">USD 14</p>
-            <p className="text-sm text-muted-foreground mt-2">Ahorras USD 75 (84% de descuento)</p>
+            <p className="text-lg md:text-2xl text-primary mb-2">🔥 Precio de lanzamiento - HOY</p>
+            <p className="text-4xl md:text-6xl font-bold text-primary" data-testid="text-price">USD 14</p>
+            <p className="text-xs md:text-sm text-muted-foreground mt-2">Ahorras USD 75 (84% de descuento)</p>
           </div>
-          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
+          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3 md:p-4">
             <div className="flex items-center justify-center gap-2 text-destructive mb-2">
-              <Clock className="w-5 h-5" />
-              <p className="text-sm md:text-base font-semibold">Esta oferta expira en:</p>
+              <Clock className="w-4 h-4 md:w-5 md:h-5" />
+              <p className="text-xs md:text-base font-semibold">Esta oferta expira en:</p>
             </div>
-            <p className="text-2xl md:text-3xl font-bold text-destructive font-mono">
+            <p className="text-xl md:text-3xl font-bold text-destructive font-mono">
               {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
             </p>
             <p className="text-xs text-muted-foreground mt-2">Después el precio vuelve a USD 89</p>
           </div>
           <Button 
             size="lg" 
-            className="w-full text-lg px-8 py-6 rounded-full shadow-lg animate-pulse hover:animate-none hover:scale-105 transition-transform"
+            className="w-full text-base md:text-lg px-6 md:px-8 py-5 md:py-6 rounded-full shadow-lg"
             onClick={handlePurchase}
             data-testid="button-purchase"
           >

@@ -10,24 +10,24 @@ const includedItems = [
 
 export default function IncludedSection() {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-12 md:py-24 bg-background">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-12 text-foreground">
+        <h2 className="font-serif text-2xl md:text-4xl font-semibold text-center mb-8 md:mb-12 text-foreground">
           Lo que incluye la guía
         </h2>
-        <div className="space-y-6">
+        <div className="space-y-4 md:space-y-6">
           {includedItems.map((item, index) => {
             const Icon = item.icon;
             return (
               <div 
                 key={index} 
-                className="flex gap-4 items-center p-4 rounded-md hover-elevate"
+                className="flex gap-3 md:gap-4 items-center p-3 md:p-4 rounded-md hover-elevate"
                 data-testid={`item-included-${index}`}
               >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                 </div>
-                <p className="text-lg text-foreground">{item.text}</p>
+                <p className="text-sm md:text-lg text-foreground">{item.text}</p>
               </div>
             );
           })}
