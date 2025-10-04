@@ -6,12 +6,10 @@ import TransformationSection from "@/components/TransformationSection";
 import MethodologySection from "@/components/MethodologySection";
 import IncludedSection from "@/components/IncludedSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import AuthorSection from "@/components/AuthorSection";
 import PricingSection from "@/components/PricingSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -24,12 +22,10 @@ export default function Home() {
       <MethodologySection />
       <IncludedSection />
       <TestimonialsSection />
-      <AuthorSection />
       <PricingSection />
       <GuaranteeSection />
       <FAQSection />
       <FinalCTASection />
-      <Footer />
     </div>
   );
 }
