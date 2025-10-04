@@ -11,21 +11,29 @@ export default function PricingSection() {
   return (
     <section id="pricing-section" className="py-16 md:py-24 bg-gradient-to-br from-[hsl(340,65%,92%)] via-[hsl(300,45%,88%)] to-[hsl(25,35%,90%)]">
       <div className="max-w-2xl mx-auto px-4">
-        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-12 text-foreground">
-          Precio especial por tiempo limitado
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-4 text-foreground">
+          Acceso inmediato - Precio promocional
         </h2>
+        <p className="text-center text-muted-foreground mb-8">
+          Solo 47 copias disponibles a este precio especial
+        </p>
         <Card className="p-8 md:p-12 text-center space-y-6">
           <div>
-            <p className="text-lg text-muted-foreground mb-2">Valor real:</p>
+            <p className="text-lg text-muted-foreground mb-2">Valor del programa completo:</p>
             <p className="text-2xl md:text-3xl line-through opacity-60 text-foreground">USD 89</p>
           </div>
           <div>
-            <p className="text-xl md:text-2xl text-primary mb-2">🔥 Oferta limitada</p>
+            <p className="text-xl md:text-2xl text-primary mb-2">🔥 Precio de lanzamiento - HOY</p>
             <p className="text-5xl md:text-6xl font-bold text-primary" data-testid="text-price">USD 14</p>
+            <p className="text-sm text-muted-foreground mt-2">Ahorras USD 75 (84% de descuento)</p>
           </div>
-          <div className="flex items-center justify-center gap-2 text-destructive">
-            <Clock className="w-5 h-5" />
-            <p className="text-sm md:text-base">El precio promocional sube pronto</p>
+          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
+            <div className="flex items-center justify-center gap-2 text-destructive mb-2">
+              <Clock className="w-5 h-5" />
+              <p className="text-sm md:text-base font-semibold">Esta oferta expira en:</p>
+            </div>
+            <p className="text-2xl font-bold text-destructive">23 horas 47 minutos</p>
+            <p className="text-xs text-muted-foreground mt-2">Después el precio vuelve a USD 89</p>
           </div>
           <Button 
             size="lg" 
@@ -33,11 +41,24 @@ export default function PricingSection() {
             onClick={handlePurchase}
             data-testid="button-purchase"
           >
-            Comprar ahora ✅
+            Sí, quiero acceso inmediato por USD 14
           </Button>
-          <p className="text-sm text-muted-foreground">
-            El pago se procesa de forma 100% segura a través de Hotmart en tu moneda local.
+          <p className="text-sm text-foreground font-medium">
+            📥 Recibes el ebook instantáneamente en tu email
           </p>
+          <p className="text-xs text-muted-foreground">
+            Pago 100% seguro procesado por Hotmart · Aceptamos todas las tarjetas y métodos locales
+          </p>
+          <div className="pt-4 border-t">
+            <p className="text-sm font-semibold text-foreground mb-2">✅ Esto es lo que recibes HOY:</p>
+            <div className="text-sm text-left space-y-1 text-muted-foreground">
+              <p>✓ Ebook completo paso a paso (PDF descargable)</p>
+              <p>✓ 3 plantillas de publicaciones listas para usar</p>
+              <p>✓ Guía de precios y paquetes de servicio</p>
+              <p>✓ Plan de acción de 48 horas</p>
+              <p>✓ Acceso inmediato y para siempre</p>
+            </div>
+          </div>
         </Card>
       </div>
     </section>

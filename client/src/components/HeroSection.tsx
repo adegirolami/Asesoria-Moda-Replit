@@ -12,11 +12,14 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left space-y-6">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-2">
+              💄 Más de 3,200 mujeres ya transformaron su pasión en ingresos
+            </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              💄 Vive de tu pasión por la moda: empieza a ganar dinero como asesora de imagen usando solo tu celular y tus redes.
+              Lanza tu primera asesoría de imagen en 48 horas y genera USD 500-1,500 al mes
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-              Un plan simple, claro y probado para monetizar tu talento en menos de 48 horas.
+              Un plan simple, claro y probado para monetizar tu talento por la moda usando solo tu celular y tus redes. Sin necesidad de experiencia previa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
               <Button 
@@ -25,11 +28,11 @@ export default function HeroSection() {
                 onClick={handleCTA}
                 data-testid="button-cta-hero"
               >
-                Descargar ahora por USD 14
+                Comienza tu asesoría en 48h - USD 14
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              ✅ Garantía de 7 días · ✅ Pago 100% seguro
+              📥 Acceso inmediato en tu email · ✅ Garantía 7 días · 🔒 Pago 100% seguro
             </p>
           </div>
           <div className="flex justify-center">
