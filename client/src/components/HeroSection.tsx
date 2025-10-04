@@ -12,9 +12,6 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left space-y-6">
-            <div className="inline-block bg-white text-primary px-4 py-2 rounded-full text-sm font-semibold mb-2 shadow-sm border border-primary/20">
-              💄 Más de 3,200 mujeres ya transformaron su pasión en ingresos
-            </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Lanza tu primera asesoría de imagen en 48 horas y genera USD 500-1,500 al mes
             </h1>
