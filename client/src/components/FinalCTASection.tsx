@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 
 export default function FinalCTASection() {
   const handleFinalCTA = () => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout', {
+        value: 14.00,
+        currency: 'USD',
+        content_name: 'Ebook Asesora de Imagen'
+      });
+    }
     window.open('https://pay.hotmart.com/C102237917S', '_blank');
   };
 

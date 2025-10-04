@@ -3,6 +3,13 @@ import ebookImage from "@assets/generated_images/3D_ebook_mockup_with_fashion_el
 
 export default function HeroSection() {
   const handleCTA = () => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout', {
+        value: 14.00,
+        currency: 'USD',
+        content_name: 'Ebook Asesora de Imagen'
+      });
+    }
     window.open('https://pay.hotmart.com/C102237917S', '_blank');
   };
 
