@@ -37,7 +37,7 @@ export default function PricingSection() {
           </div>
           <Button 
             size="lg" 
-            className="w-full text-lg px-8 py-6 rounded-full shadow-lg"
+            className="w-full text-lg px-8 py-6 rounded-full shadow-lg animate-pulse hover:animate-none hover:scale-105 transition-transform"
             onClick={handlePurchase}
             data-testid="button-purchase"
           >

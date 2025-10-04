@@ -21,7 +21,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
               <Button 
                 size="lg" 
-                className="text-lg px-8 py-6 rounded-full shadow-lg"
+                className="text-lg px-8 py-6 rounded-full shadow-lg animate-pulse hover:animate-none hover:scale-105 transition-transform"
                 onClick={handleCTA}
                 data-testid="button-cta-hero"
               >

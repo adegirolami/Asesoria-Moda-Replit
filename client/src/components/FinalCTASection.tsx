@@ -14,7 +14,7 @@ export default function FinalCTASection() {
         </h2>
         <Button 
           size="lg" 
-          className="text-lg px-12 py-6 rounded-full shadow-lg"
+          className="text-lg px-12 py-6 rounded-full shadow-lg animate-pulse hover:animate-none hover:scale-105 transition-transform"
           onClick={handleFinalCTA}
           data-testid="button-cta-final"
         >
