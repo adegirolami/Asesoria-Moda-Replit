@@ -61,7 +61,7 @@ export default function PricingSection() {
             onClick={handlePurchase}
             data-testid="button-purchase"
           >
-            Sí, quiero acceso inmediato por USD 14
+            Quiero acceso inmediato por USD 14
           </Button>
           <p className="text-sm text-foreground font-medium">
             📥 Recibes el ebook instantáneamente en tu email
