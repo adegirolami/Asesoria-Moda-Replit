@@ -2,8 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function FinalCTASection() {
   const handleFinalCTA = () => {
-    console.log('Final CTA clicked - scroll to purchase');
-    document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' });
+    window.open('https://pay.hotmart.com/C102237917S', '_blank');
   };
 
   return (
