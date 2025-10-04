@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left space-y-4 md:space-y-6">
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Lanza tu primera asesoría de imagen en 48 horas y genera USD 500-1,500 al mes
+              Empieza a vivir de tu pasión: arma tu negocio digital de asesoría de imagen
             </h1>
             <p className="text-base md:text-xl text-foreground/80 leading-relaxed">
               Un plan simple, claro y probado para monetizar tu talento por la moda usando solo tu celular y tus redes. Sin necesidad de experiencia previa.
